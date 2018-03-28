@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>腾讯微博案例</title>
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        body{
+            background: url(img/wrapBg.jpg) repeat-x #ebf1f1;
+        }
+        #myBody{
+            width: 800px;
+            height: 200px;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+        img#logo{
+            margin: 30px 0 0 300px;
+        }
+        #leftInfo{
+            float: left;
+            width: 590px;
+            height: 100%;
+            background-color: #fff;
+        }
+        #rightInfo{
+            float: right;
+            width:210px;
+            height: 100%;
+            background-color: #ccebf4;
+        }
+        #info{
+            margin-left: 25px;
+        }
+        #head{
+            font-size: 29px;
+            text-align: left;
+            font: normal normal normal 18px/29px 'MicroSoft YaHei', SimHei;
+        }
+        textarea{
+            width: 540px;
+            height: 80px;
+            border: 1px solid gray;
+            font-size: 16px;
+        }
+        #style{
+            width: 540px;
+        }
+        #style a{
+            color: black;
+            font-size: 14px;
+            display: inline-block;
+            height: 16px;
+            padding-left: 18px;
+        }
+        #footText{
+            float: right;
+            color: #999;
+            line-height: 33px;
+            margin-right: 29px;
+        }
+        em{
+            font-family: Georgia, Tahoma, Arial;
+            font-size: 26px;
+            position: relative;
+            top: -5px;
+            vertical-align: middle;
+        }
+        input{
+            float: right;
+            margin-right: 20px;
+            line-height: 33px;
+            width: 112px;
+            height: 30px;
+            cursor: pointer;
+            background: url(img/bg1.png) -117px -165px no-repeat;
+            border-width: 0;
+        }
+        .face{
+            position: absolute;
+            width: 300px;
+            background-color: #f0f0f0;
+        }
+        .friend{
+            position: absolute;
+            background-color: #cbe9f1;
+        }
+        .friend li{
+            height: 20px;
+            line-height: 20px;
+            cursor: pointer;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        .friend li:hover{
+            background-color: gray;
+        }
+    </style>
+    <script src="../jquery-1.8.3.js"></script>
+    <script src="function.js"></script>
+</head>
+<body>
+<img id="logo" src="img/b3_100901.png">
+<div id="myBody">
+    <div id="leftInfo">
+        <div id="info">
+            <div id="myHead">
+                <span id="head">夏天来了，你懂得......</span>
+            </div>
+            <div id="text">
+                <textarea id="txt" name=""></textarea>
+            </div>
+            <div id="style">
+                <a id="new" href="#">话题</a>
+                <a id="friends" href="#">朋友</a>
+                <a id="face" href="#">表情</a>
+                <a href="#">照片</a>
+                <a href="#">视频</a>
+            </div>
+            <div id="myFoot">
+                <input id="btn" type="button" name="">
+                <span id="footText">还能输入<em>140</em>字</span>
+            </div>
+        </div>
+    </div>
+    <div id="rightInfo"></div>
+</div>
+</body>
+</html>

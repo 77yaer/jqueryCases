@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>右下角弹出广告</title>
+    <script src="../jquery-1.8.3.js"></script>
+    <style type="text/css">
+        .ad{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            background: url(imgs/ad.jpg) no-repeat;
+            width: 230px;
+            height: 120px;
+            display: none;
+        }
+        span{
+            position: fixed;
+            right: 0;
+            bottom: 120px;
+            background: url(imgs/h.jpg);
+            width: 40px;
+            height: 18px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function(){
+            $('span').siblings('a')
+            // .slideDown('normal').slideUp('slow')
+            .fadeIn(1000).siblings("span")
+            .click(function(){
+                $(this).parent().fadeOut('slow');
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <a href="#nowhere" class="ad">
+    </a>
+    <span></span>
+</div>
+</body>
+</html>
